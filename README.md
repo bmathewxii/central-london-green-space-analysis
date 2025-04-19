@@ -3,8 +3,8 @@
 This project analyses green space coverage across 10 boroughs in central London using satellite imagery and Python. It identifies parks, gardens, and vegetation areas within central boroughs, creates visuals to show results.
 
 ## Data Sources
-London borough boundaries: https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
-Sentinel-2 data: https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2
+- London borough boundaries: https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
+- Sentinel-2 data: https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2
 
 ## Requirements
 
@@ -26,15 +26,15 @@ pip install -r requirements.txt
 ## Project Structure
 
 project/
-├── Data/                       # Data storage (not included in repo)
-│   ├── Raw/                    # Original satellite images and boundaries
-│   └── Processed/              # Processed data files
-├── Results/                    # Output visualisations and statistics
-├── Scripts/                    # Python scripts
+├── Data/                        # Data storage (not included in repo)
+│   ├── Raw/                     # Original satellite images and boundaries
+│   └── Processed/               # Processed data files
+├── Results/                     # Output visualisations and statistics
+├── Scripts/                     # Python scripts
 │   ├── process_london_boundaries.py   # Process borough boundaries
 │   ├── clip_sentinel_data.py          # Clip satellite imagery to boundaries
 │   └── calculate_ndvi.py              # Calculate vegetation indices and statistics
-└── README.md                   # Project documentation
+└── README.md                    # Project documentation
 
 ## Analysed Boroughs
 This analysis focuses on 10 central London boroughs (this can be configured in the code if needed): 
