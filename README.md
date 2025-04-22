@@ -1,10 +1,7 @@
 # Satellite Imagery Analysis - Central London Green Spaces
 
-This project analyses green space coverage using satellite imagery across 10 boroughs in central London. The scripts processes Sentinel-2 data to calculate the Normalized Difference Vegetation Index (NDVI) - which is a differential measure based on the reflection of near-infared and red light. The creating vegetation masks that identify discrete green areas across ten central boroughs.
-
-By converting satellite data into measurable green space metrics, the project delivers maps, borough-level statistics, and comparative figures and charts
-The resulting visualizations reveal the uneven distribution of vegetation throughout central London, highlighting which boroughs exceed or fall below the regional average for green space coverage.
-
+This project analyses green space coverage using satellite imagery across 10 boroughs in central London. The scripts processes Sentinel-2 data to calculate the Normalized Difference Vegetation Index (NDVI) - a differential measure based on the reflection of near-infared and red light.
+.
 ## Data Sources
 London borough boundaries: https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
 Sentinel-2 data: https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2
