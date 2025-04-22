@@ -1,10 +1,12 @@
-# Central London Green Space Analysis
+# Satellite Imagery Analysis - Central London Green Spaces
 
-This project analyses green space coverage across 10 boroughs in central London using satellite imagery and Python. It identifies parks, gardens, and vegetation areas within central boroughs, creates visuals to show results.
+This project analyses green space coverage using satellite imagery across 10 boroughs in central London. The scripts processes Sentinel-2 data to calculate the Normalized Difference Vegetation Index (NDVI) - which is a differential measure based on the reflection of near-infared and red light. The creating vegetation masks that identify discrete green areas across ten central boroughs.
+By converting satellite data into measurable green space metrics, the project delivers maps, borough-level statistics, and comparative figures and charts
+The resulting visualizations reveal the uneven distribution of vegetation throughout central London, highlighting which boroughs exceed or fall below the regional average for green space coverage.
 
 ## Data Sources
-- London borough boundaries: https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
-- Sentinel-2 data: https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2
+London borough boundaries: https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
+Sentinel-2 data: https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2
 
 ## Analysed Boroughs
 This analysis focuses on 10 central London boroughs (this can be configured in the code if needed): 
@@ -19,6 +21,7 @@ This analysis focuses on 10 central London boroughs (this can be configured in t
 - Tower Hamlets
 - Hackney
 - Wandsworth
+
 
 ## Requirements
 
@@ -43,7 +46,7 @@ To run this analysis, you'll need to:
 
 1. Download Sentinel-2 imagery from https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2 
 2. Download London borough boundaries from https://data.london.gov.uk/dataset/statistical-gis-boundary-files-london
-3. Place the data in the appropriate folders
+3. Ensure folder structure consistent with code
 
 ## Usage
 
@@ -75,15 +78,15 @@ This script calculates the Normalised Difference Vegetation Index (NDVI) from th
 
 ## Results
 
-The analysis produces several types of visualisations and data:
+Reuslts have been saved down on the Results folder as part of this repo - analysis produces several types of visualisations and data:
 
 Boundary Processing Outputs:
-- Maps of selected central London boroughs and combined boundaries
+- Map of selected central London boroughs
 - Area statistics for each borough in tabular format
 
 Sentinel-2 Processing Outputs:
 - Previews of processed spectral bands
-- True color composite images of central London
+- Sattelite view of selected boroughs
 
 NDVI Analysis Outputs:
 - NDVI maps showing vegetation density across Central London
